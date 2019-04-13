@@ -1,0 +1,28 @@
+{
+  "name": "event-loop",
+  "version": "1.0.0",
+  "description": "how does any of this work",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "engineStrict": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoo29/event-loop.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoo29/event-loop/issues"
+  },
+  "homepage": "https://github.com/hoo29/event-loop#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
