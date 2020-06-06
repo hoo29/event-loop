@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=12.0.0"
   },
   "engineStrict": true,
   "repository": {
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/hoo29/event-loop#readme",
   "devDependencies": {
-    "nodemon": "^1.18.11"
+    "nodemon": "^1.19.4"
   }
 }
