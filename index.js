@@ -2,7 +2,6 @@ const ids = ['a', 'b', 'c'];
 const spamLimit = 50; // ms
 let cache = {};
 let timeOfLastRequest = 0; // epoch
-
 let mutex = Promise.resolve();
 
 const getRandInRange = (min, max) => Math.floor(Math.random() * max) + min;
@@ -31,6 +30,8 @@ const doAThing = async (id) => {
             console.log('present', id);
         }
     });
+
+    return mutex;
 };
 
 const getDataFromRemote = async (id) => {
@@ -63,4 +64,4 @@ const workTimer = setInterval(async () => {
     } catch (e) {
         errHandler(e);
     }
-}, 300);
+}, 40);
